@@ -1,0 +1,118 @@
+:root {
+  --font: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "Segoe UI", sans-serif;
+  --font-mono: "Lucida Console", "Lucida Sans Typewriter", Monaco, monospace;
+
+  /* ink — deep navy, never black */
+  --ink: #1b2559;
+  --ink-2: #4a5885;
+  --ink-3: #8592b5;
+
+  --bg: #edf2fb;
+  --surface: #ffffff;
+  --surface-2: #f6f8fe;
+  --line: #e2e8f5;
+  --line-2: #d3dcf0;
+
+  --brand: #3456e8;
+  --brand-2: #16b3c7;
+  --brand-soft: #e9eeff;
+
+  /* chart series (validated categorical order) */
+  --series-1: #2a78d6;
+  --series-2: #eb6834;
+  --series-3: #1baf7a;
+  --series-4: #eda100;
+  --series-5: #e87ba4;
+  --series-6: #008300;
+  --series-7: #6250d6;
+  --series-8: #e34948;
+
+  /* tones */
+  --tone-blue: #2a78d6;
+  --tone-violet: #6250d6;
+  --tone-good: #1f9d55;
+  --tone-warn: #d98a00;
+  --tone-bad: #d64545;
+  --tone-muted: #8592b5;
+  --tone-teal: #13a8bd;
+  --tone-amber: #e8a10a;
+  --tone-coral: #eb6834;
+  --tone-green: #1baf7a;
+  --tone-info: #2a78d6;
+  --tone-light: #ffffff;
+
+  /* main banner — swap this one line to recolour it */
+  --hero-grad: linear-gradient(118deg, #4c1d95 0%, #6d28d9 34%, #9333ea 62%, #db2777 100%);
+
+  --radius: 18px;
+  --shadow: 0 1px 2px rgba(40, 60, 140, 0.05), 0 8px 24px -12px rgba(40, 60, 140, 0.18);
+  --shadow-lg: 0 24px 60px -24px rgba(52, 86, 232, 0.45);
+
+  font-family: var(--font);
+  color: var(--ink);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+button,
+input {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  background: none;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #c9d3ec;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
